@@ -669,6 +669,53 @@ a:hover {
   color: #ffffff;
 }
 
+.s-working-way {
+  padding: 120px 0 70px 0;
+}
+
+.s-working-way__title {
+  margin-bottom: 60px;
+}
+
+.s-brands {
+  position: relative;
+  padding: 120px 0 90px 0;
+}
+
+.s-brands::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-brands.jpg") center no-repeat;
+  background-size: cover;
+  -webkit-filter: opacity(8%);
+          filter: opacity(8%);
+}
+
+.s-brands__title {
+  margin-bottom: 60px;
+}
+
+.s-brands__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.s-brands__img {
+  margin: 30px 15px;
+}
+
 .footer {
   padding: 37px 0px 16px 0px;
   color: #ffffff;
