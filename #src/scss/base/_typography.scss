@@ -13,29 +13,30 @@ a {
     transition: $base-transition;
 
     &:hover {
-        color: #0756BB;
+        color: #0756bb;
     }
 }
 
-/*
-h1 {
-    font-size: rem(54px);
-    line-height: $base-line-height * 3;
-    margin-bottom: $base-line-height * 2;
-    font-weight: bold;
-}
-
-h2 {
+.base-title {
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 600;
     font-size: 36px;
-    line-height: $base-line-height * 2;
-    margin-bottom: $base-line-height;
-    font-weight: bold;
-}
+    line-height: 43px;
+    text-align: center;
 
-h3 {
-    font-size: 24px;
-    line-height: $base-line-height;
-    margin-bottom: $base-line-height;
-    font-weight: bold;
+    color: #1b1716;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        width: 170px;
+        height: 5px;
+        background: rgb(7, 86, 187);
+        background: linear-gradient(90deg, #05387a 0%, #0756bb 100%);
+
+        transform: translateX(50%);
+    }
 }
-*/
