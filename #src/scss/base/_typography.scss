@@ -8,6 +8,15 @@ body {
     color: $base-text-color;
 }
 
+a {
+    color: #333333;
+    transition: $base-transition;
+
+    &:hover {
+        color: #0756BB;
+    }
+}
+
 /*
 h1 {
     font-size: rem(54px);

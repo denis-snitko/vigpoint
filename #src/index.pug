@@ -4,8 +4,13 @@ block variables
 	- const title = "Vigpoint"
 
 block content
-	include ./modules/header/_header.pug
-	main
+	.main-body
+		include ./modules/header/_header
+
+		main.content
+			|content
+
+		include ./modules/footer/_footer
 
 block scripts
 	script(src="./assets/js/vendors.js")

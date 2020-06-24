@@ -1,1 +1,28 @@
-header.header pug header
+header.header
+    .container
+        .header__inner
+            a.logo.header__logo(href="#")
+                img.logo__img(src="./assets/img/logo-color.png" alt="Vigpoint")
+            .header__body
+                .header__top
+                    .header__adress Москва, Полесский проезд 16, офис 203
+                    a.header__tel(href="") +7 (499) 557-04-74
+                    a.header__mail(href="") Vigpoint@gmail.com
+                nav.main-menu.header__menu
+                    ul.main-menu__list
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Главная
+                        li.main-menu__item
+                            a.main-menu__link(href="#") О компании
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Производство
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Профильные системы
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Монтажные подразделения
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Достижения
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Контакты
+
+            button.base-button.header__button Оставить заявку
