@@ -1,4 +1,44 @@
 .footer {
+    padding: 37px 0px 16px 0px;
+
     color: #ffffff;
-    background-color: #1B1716;
+    background-color: #1b1716;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__menu {
+        .main-menu__link {
+            font-size: 16px;
+            color: #ffffff;
+
+            &:hover {
+                color: #0756BB;
+            }
+        }
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+
+        color: #4f4f4f;
+
+        a {
+            color: #0756bb;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

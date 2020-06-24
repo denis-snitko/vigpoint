@@ -382,8 +382,8 @@ h3 {
 .header__adress::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   display: block;
   width: 18px;
   height: 25px;
@@ -403,8 +403,8 @@ h3 {
 .header__tel::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   display: block;
   width: 20px;
   height: 20px;
@@ -423,8 +423,8 @@ h3 {
 .header__mail::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   display: block;
   width: 22px;
   height: 16px;
@@ -462,6 +462,55 @@ h3 {
 }
 
 .footer {
+  padding: 37px 0px 16px 0px;
   color: #ffffff;
-  background-color: #1B1716;
+  background-color: #1b1716;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__menu .main-menu__link {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer__menu .main-menu__link:hover {
+  color: #0756BB;
+}
+
+.footer__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4f4f4f;
+}
+
+.footer__text a {
+  color: #0756bb;
+}
+
+.footer__text a:hover {
+  text-decoration: underline;
 }
