@@ -18,30 +18,41 @@ $(document).ready(function () {
 
 
     $('.owl-carousel__s-clients').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 25,
         navText: ["<img src='assets/img/svg/slider-arrow-prev.svg'>", "<img src='assets/img/svg/slider-arrow-next.svg'>"],
-        nav:true,
+        nav: true,
         dots: false,
-        responsive:{
-            0:{
-                items:3
+        responsive: {
+            0: {
+                items: 3
             },
-            
+
         }
     })
 
     $('.owl-carousel__s-partners').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 22,
         navText: ["<img src='assets/img/svg/slider-arrow-prev-gray.svg'>", "<img src='assets/img/svg/slider-arrow-next-gray.svg'>"],
-        nav:true,
+        nav: true,
         dots: false,
-        responsive:{
-            0:{
-                items:4
+        responsive: {
+            0: {
+                items: 4
             },
-            
+        }
+    })
+    
+    $('.owl-carousel__s-reviews').owlCarousel({
+        loop: true,
+        navText: ["<img src='assets/img/svg/slider-arrow-prev-gray.svg'>", "<img src='assets/img/svg/slider-arrow-next-gray.svg'>"],
+        nav: true,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
         }
     })
 

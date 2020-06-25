@@ -18,7 +18,7 @@
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         color: #1b1716;
 
-        p {
+        & > p {
             margin-bottom: 20px;
         }
     }

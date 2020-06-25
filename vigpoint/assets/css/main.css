@@ -751,6 +751,11 @@ a:hover {
   padding: 0 5px;
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #0756bb;
+}
+
 /* MODULES */
 
 .header {
@@ -1158,7 +1163,7 @@ a:hover {
   color: #1b1716;
 }
 
-.s-mounter__text p {
+.s-mounter__text > p {
   margin-bottom: 20px;
 }
 
@@ -1262,6 +1267,115 @@ a:hover {
 
 .s-partners__item img {
   width: auto !important;
+}
+
+.s-video {
+  position: relative;
+  padding: 120px 0;
+}
+
+.s-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-video.jpg") center no-repeat;
+  background-size: cover;
+  -webkit-filter: opacity(8%);
+          filter: opacity(8%);
+}
+
+.s-video__title {
+  margin-bottom: 60px;
+}
+
+.s-video__row {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.s-objects {
+  padding: 120px 0 80px 0;
+}
+
+.s-reviews {
+  position: relative;
+  padding: 120px 0;
+}
+
+.s-reviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-reviews.jpg") center no-repeat;
+  background-size: cover;
+  -webkit-filter: opacity(8%);
+          filter: opacity(8%);
+}
+
+.s-reviews__item {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 970px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.s-reviews__img {
+  max-width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.s-reviews__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+.s-reviews__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1b1716;
+}
+
+.s-reviews__author {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #bdbdbd;
+}
+
+.s-reviews__work {
+  font-weight: 500;
+  color: #bdbdbd;
+}
+
+.s-reviews .quote--blue {
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 73px;
+  color: #0756bb;
 }
 
 .footer {
