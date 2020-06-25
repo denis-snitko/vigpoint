@@ -1,0 +1,25 @@
+.s-partners {
+    position: relative;
+    padding: 120px 0 120px 0;
+
+    &__row {
+        position: relative;
+        padding: 0 45px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 156px;
+        margin: 5px 0;
+        background: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: auto !important;
+        }
+    }
+}

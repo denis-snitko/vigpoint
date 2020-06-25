@@ -103,17 +103,20 @@
 }
 
 .owl-theme .owl-nav {
-    .owl-prev{
+    .owl-prev {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
     }
-    .owl-next{
+    .owl-next {
         position: absolute;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
     }
-    
+}
+
+.owl-carousel .owl-stage-outer {
+    padding: 0 5px;
 }
