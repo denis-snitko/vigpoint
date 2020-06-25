@@ -40,3 +40,61 @@
         background-color: #ffffff;
     }
 }
+
+.base-list {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    color: #1b1716;
+
+    &__item {
+        position: relative;
+        margin-bottom: 13px;
+        padding-left: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 0;
+
+            width: 15px;
+            height: 15px;
+
+            background-color: #0756bb;
+        }
+    }
+}
+
+.slider {
+    &-for {
+        // width: 570px;
+        height: 360px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &-nav {
+        .slider__item {
+            cursor: pointer;
+            
+            img {
+                max-width: 180px;
+                height: 144px;
+            }
+        }
+    }
+}

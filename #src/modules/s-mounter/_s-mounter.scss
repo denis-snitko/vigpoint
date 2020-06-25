@@ -1,0 +1,35 @@
+.s-mounter {
+    padding: 120px 0;
+
+    &__row {
+        @include row-flex();
+    }
+
+    &__col {
+        @include col();
+        @include size(6);
+        @include size-md(12);
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 21px;
+
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        color: #1b1716;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__small-title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        color: #1b1716;
+    }
+}
