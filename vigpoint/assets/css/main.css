@@ -725,6 +725,28 @@ a:hover {
   height: 144px;
 }
 
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+}
+
+.owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 /* MODULES */
 
 .header {
@@ -1143,6 +1165,67 @@ a:hover {
   line-height: 24px;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   color: #1b1716;
+}
+
+.s-clients {
+  position: relative;
+  padding: 120px 0 120px 0;
+}
+
+.s-clients::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg-clients.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.s-clients::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 86, 187, 0.4);
+}
+
+.s-clients__wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.s-clients__row {
+  position: relative;
+  padding: 0 45px;
+}
+
+.s-clients__title {
+  color: #fff;
+}
+
+.s-clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 205px;
+  background: #ffffff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2.4623px 12.3115px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2.4623px 12.3115px rgba(0, 0, 0, 0.1);
+}
+
+.s-clients__item img {
+  width: auto !important;
 }
 
 .footer {

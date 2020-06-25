@@ -16,5 +16,20 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
+
+    $('.owl-carousel__s-clients').owlCarousel({
+        loop:true,
+        margin: 25,
+        navText: ["<img src='assets/img/svg/slider-arrow-prev.svg'>", "<img src='assets/img/svg/slider-arrow-next.svg'>"],
+        nav:true,
+        dots: false,
+        responsive:{
+            0:{
+                items:3
+            },
+            
+        }
+    })
+
 });
 
