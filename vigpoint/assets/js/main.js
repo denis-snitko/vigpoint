@@ -56,7 +56,7 @@ $(document).ready(function () {
             },
         }
     })
-    
+
     $('.owl-carousel__s-reviews').owlCarousel({
         loop: true,
         navText: ["<img src='assets/img/svg/slider-arrow-prev-gray.svg'>", "<img src='assets/img/svg/slider-arrow-next-gray.svg'>"],
@@ -66,6 +66,19 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
+        }
+    })
+
+    $('.page-slider').owlCarousel({
+        loop: true,
+        margin: 22,
+        navText: ["<img src='assets/img/svg/slider-arrow-prev-gray.svg'>", "<img src='assets/img/svg/slider-arrow-next-gray.svg'>"],
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 3,
+            }
         }
     })
 

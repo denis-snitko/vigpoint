@@ -1,0 +1,21 @@
+.p-production {
+    padding: 120px 0;
+
+    &__video {
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+
+        margin-bottom: 45px;
+
+        video {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.page-wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+}

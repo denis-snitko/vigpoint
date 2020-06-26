@@ -766,6 +766,22 @@ a:hover {
   background-color: #0756bb;
 }
 
+.page-text {
+  margin-bottom: 45px;
+  font-weight: 500;
+  line-height: 21px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+.page-text p {
+  margin-bottom: 20px;
+}
+
+.page-text p:last-child {
+  margin-bottom: 0;
+}
+
 .slider-for {
   height: 360px;
   margin-bottom: 40px;
@@ -806,6 +822,14 @@ a:hover {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.page-slider.owl-theme .owl-nav .owl-prev {
+  left: -90px;
+}
+
+.page-slider.owl-theme .owl-nav .owl-next {
+  right: -90px;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -1673,6 +1697,27 @@ a:hover {
   font-size: 18px;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   color: #1b1716;
+}
+
+.p-production {
+  padding: 120px 0;
+}
+
+.p-production__video {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.p-production__video video {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
 .footer {
