@@ -1,20 +1,19 @@
 .s-hero {
+    display: flex;
     background-color: #1b1716;
-    &__body {
-        display: flex;
-        width: 1545px;
-        height: 580px;
-        margin-left: auto;
-    }
 
+    &__item {
+        display: flex;
+        justify-content: flex-end;
+        // overflow: hidden;
+    }
+    
     &__text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 545px;
+        width: 570px;
         padding: 54px 90px 54px 0px;
-
-        border: 1px solid #fff;
     }
 
     &__title {
@@ -29,8 +28,8 @@
         max-width: 370px;
     }
 
-    &__img {
-        width: 1000px;
+    img {
+        // width: inherit !important;
     }
 
     .base-list {

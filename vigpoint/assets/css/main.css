@@ -882,16 +882,19 @@ a:hover {
 }
 
 .s-hero {
-  background-color: #1b1716;
-}
-
-.s-hero__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1545px;
-  height: 580px;
-  margin-left: auto;
+  background-color: #1b1716;
+}
+
+.s-hero__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .s-hero__text {
@@ -905,9 +908,8 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 545px;
+  width: 570px;
   padding: 54px 90px 54px 0px;
-  border: 1px solid #fff;
 }
 
 .s-hero__title {
@@ -920,10 +922,6 @@ a:hover {
 .s-hero__button {
   width: 100%;
   max-width: 370px;
-}
-
-.s-hero__img {
-  width: 1000px;
 }
 
 .s-hero .base-list {
