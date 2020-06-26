@@ -1435,6 +1435,88 @@ a:hover {
   padding: 120px 0 80px 0;
 }
 
+.s-objects .s-working-way__card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.s-objects .base-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.33333% - 30px);
+  max-width: 360px;
+  height: 300px;
+  border-bottom: 8px solid #0756bb;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.s-objects .base-card:hover {
+  opacity: 0.95;
+  background: #05387a;
+  border-bottom: 8px solid #fff;
+}
+
+.s-objects .base-card:hover .portfolio-card__link {
+  opacity: 1;
+}
+
+.s-objects .base-card:hover .base-card__title,
+.s-objects .base-card:hover .base-card__descr {
+  color: #fff;
+}
+
+.s-objects .base-card:hover .base-card__icon {
+  border-bottom: 2px solid #fff;
+}
+
+.s-objects .base-card:hover .base-card__icon svg path {
+  fill: #fff;
+}
+
+.s-objects .base-card__icon {
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+.s-objects .base-card__bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.s-objects .base-card__title {
+  color: #0756bb;
+}
+
+.s-objects .base-card__descr {
+  margin-bottom: 30px;
+  color: #1b1716;
+}
+
+.s-objects .portfolio-card__link {
+  opacity: 0;
+  font-weight: 300;
+}
+
+.s-objects .portfolio-card__link::after {
+  right: 70px;
+}
+
+.s-objects .portfolio-card__link:hover::after {
+  right: 60px;
+}
+
 .s-reviews {
   position: relative;
   padding: 120px 0;
@@ -1665,6 +1747,10 @@ a:hover {
   .s-mounter__col {
     width: calc(100% - 30px);
   }
+
+  .s-objects .base-card {
+    width: calc(50% - 30px);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1673,6 +1759,16 @@ a:hover {
   }
 
   .portfolio-card {
+    width: calc(100% - 30px);
+  }
+
+  .s-objects .s-working-way__card-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .s-objects .base-card {
     width: calc(100% - 30px);
   }
 }
