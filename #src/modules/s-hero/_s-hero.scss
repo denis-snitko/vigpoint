@@ -1,0 +1,53 @@
+.s-hero {
+    background-color: #1b1716;
+    &__body {
+        display: flex;
+        width: 1545px;
+        height: 580px;
+        margin-left: auto;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 545px;
+        padding: 54px 90px 54px 0px;
+
+        border: 1px solid #fff;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 51px;
+        color: #ffffff;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 370px;
+    }
+
+    &__img {
+        width: 1000px;
+    }
+
+    .base-list {
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #ffffff;
+
+        &__item {
+            &::before {
+                top: 50%;
+                left: 0;
+                width: 20px;
+                height: 2px;
+                background-color: #0756bb;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
