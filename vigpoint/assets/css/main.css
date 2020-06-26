@@ -657,6 +657,67 @@ a:hover {
   width: inherit;
 }
 
+.address {
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.address::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 25px;
+  background: url("../img/svg/map-badge.svg") center no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.tel {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 500;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/svg/tel.svg") center no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.mail {
+  position: relative;
+  padding-left: 30px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mail::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 16px;
+  background: url("../img/svg/mail.svg") center no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .base-button {
   display: block;
   padding: 12px 18px;
@@ -791,67 +852,6 @@ a:hover {
   font-size: 16px;
   color: #1b1716;
   border-bottom: 1px solid #ececec;
-}
-
-.header__adress {
-  position: relative;
-  padding-left: 30px;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.header__adress::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 18px;
-  height: 25px;
-  background: url("../img/svg/map-badge.svg") center no-repeat;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.header__tel {
-  position: relative;
-  padding-left: 30px;
-  font-weight: 500;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.header__tel::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url("../img/svg/tel.svg") center no-repeat;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.header__mail {
-  position: relative;
-  padding-left: 30px;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.header__mail::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 22px;
-  height: 16px;
-  background: url("../img/svg/mail.svg") center no-repeat;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .main-menu__list {
@@ -1484,6 +1484,53 @@ a:hover {
 .s-certificates__item img {
   width: 226px !important;
   height: 322px;
+}
+
+.s-contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1545px;
+  height: 368px;
+  margin-left: auto;
+  -webkit-box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.s-contacts__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 545px;
+  height: 100%;
+  padding: 52px 55px;
+  font-weight: 500;
+  font-size: 18px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #1b1716;
+}
+
+.s-contacts__map {
+  width: 1000px;
+}
+
+.s-contacts .address::before {
+  top: 17px;
+}
+
+.s-contacts .address p {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #1b1716;
 }
 
 .footer {
