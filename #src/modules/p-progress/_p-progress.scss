@@ -1,0 +1,58 @@
+.p-progress {
+    padding: 120px 0;
+
+    &__row {
+        @include row-flex();
+    }
+
+    &__col {
+        @include col();
+        @include size(6);
+        @include size-md(12);
+    }
+
+    &__item {
+        margin-bottom: 45px;
+    }
+}
+
+.item-progress {
+    img {
+        display: block;
+        width: 100%;
+        max-width: 570px;
+        height: 313px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+    }
+
+    &__text-inner {
+        display: flex;
+        flex-direction: column;
+        min-height: 75px;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        color: #1b1716;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+        }
+
+        span {
+            font-weight: 400;
+        }
+
+        &--first {
+            flex: 1 1 auto;
+        }
+    }
+}

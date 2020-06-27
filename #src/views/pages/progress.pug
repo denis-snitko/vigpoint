@@ -1,0 +1,18 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Достижения"
+
+block content
+	.main-body
+		include ../../modules/header/_header
+
+		main.content
+			include ../../modules/p-progress/_p-progress
+
+		include ../../modules/footer/_footer
+
+block scripts
+	script(src="./assets/js/vendors.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+	script(src="./assets/js/main.js")
