@@ -626,6 +626,17 @@ a:hover {
           transform: translateX(50%);
 }
 
+.base-small-title {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #1b1716;
+}
+
 /* GENERAL */
 
 .main-body {
@@ -1755,6 +1766,31 @@ a:hover {
   width: 300px;
   height: 274px;
   border-radius: 2px;
+}
+
+.p-mounter {
+  padding: 120px 0;
+}
+
+.p-mounter .page-text {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.p-mounter__img {
+  display: block;
+  width: 100%;
+  max-width: 1170px;
+  height: 361px;
+  margin-bottom: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+
+.p-mounter__img:last-child {
+  margin-bottom: 0;
 }
 
 .footer {

@@ -1,0 +1,23 @@
+.p-mounter {
+    padding: 120px 0;
+
+    .page-text {
+        max-width: 850px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    &__img  {
+        display: block;
+        width: 100%;
+        max-width: 1170px;
+        height: 361px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        border-radius: 2px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
