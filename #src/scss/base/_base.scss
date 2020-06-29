@@ -21,6 +21,11 @@
     }
 }
 
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .address {
     position: relative;
     padding-left: 30px;
@@ -130,7 +135,7 @@
 
 .page-text {
     margin-bottom: 45px;
-    padding: 0 15px;
+    // padding: 0 15px;
     font-weight: 500;
     line-height: 21px;
 
