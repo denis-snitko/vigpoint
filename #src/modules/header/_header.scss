@@ -1,9 +1,14 @@
 .header {
+    position: fixed;
+    z-index: 250;
+    width: 100%;
     padding: 25px 0;
+    background-color: #fff;
 
     &__inner,
     &__top {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -12,10 +17,17 @@
 
     &__logo {
         width: 136px;
+        @include sm-block() {
+            width: 93px;
+        }
     }
 
     &__body {
         padding: 0 15px;
+
+        @include md-block() {
+            display: none;
+        }
     }
 
     &__top {
@@ -48,5 +60,105 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
+    }
+}
+
+.burger-menu-icon {
+    position: relative;
+    display: none;
+    width: 50px;
+    height: 35px;
+    
+    @include md-block() {
+        display: block;
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        
+        width: 100%;
+        height: 5px;
+        
+        background-color: #0756bb;
+        
+        outline: none;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+
+            width: 100%;
+            height: 5px;
+
+            background-color: #0756bb;
+        }
+
+        &::before {
+            top: -15px;
+        }
+        &::after {
+            bottom: -15px;
+        }
+    }
+}
+
+.burger-menu {
+    position: fixed;
+    z-index: 275;
+    top: 0;
+    right: 0;
+    display: none;
+
+    width: 100%;
+    width: 100%;
+
+    padding: 37px 70px;
+
+    color: #fff;
+    background-color: #242222;
+
+    .main-menu__list {
+        align-items: start;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #0756bb;
+    }
+
+    .main-menu__link {
+        font-weight: 400;
+    }
+
+    &__contacts {
+        margin-left: -30px;
+        padding-top: 23px;
+
+        font-weight: 500;
+        color: #fff;
+
+        .address {
+            margin-bottom: 18px;
+
+            &::before {
+                top: 16px;
+            }
+        }
+
+        .tel,
+        .mail {
+            display: block;
+            color: #fff;
+        }
+
+        .tel {
+            margin-bottom: 18px;
+        }
+        
+        a:hover {
+            color: #0756bb;
+        }
     }
 }

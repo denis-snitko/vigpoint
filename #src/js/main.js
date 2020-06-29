@@ -12,7 +12,16 @@ $(document).ready(function () {
     $('.modal__close').on('click', () => {
         $('.modal').fadeOut();
     })
+    
 
+    // burger
+    $('.burger-menu-icon').on('click', () => {
+        $('.burger-menu').fadeIn();
+    })
+
+    $('.burger-menu-modal__close').on('click', () => {
+        $('.burger-menu').fadeOut();
+    })
 
 
     $('.slider-for').slick({
