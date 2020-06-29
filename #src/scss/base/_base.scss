@@ -219,3 +219,22 @@ body {
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #0756bb;
 }
+
+// Swiper
+
+.swiper-button-prev,
+.swiper-button-next {
+    &::after {
+        content: none;
+    }
+    @include md-block() {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next {
+    right: 0;
+}

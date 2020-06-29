@@ -14,9 +14,10 @@
         filter: opacity(8%);
     }
 
-    &__row {
+    &__row  {
+        position: relative;
     }
-    
+
     &__item {
         position: relative;
         z-index: 10;
@@ -65,5 +66,19 @@
         font-size: 73px;
 
         color: #0756bb;
+    }
+
+    &__swiper-container {
+        overflow: hidden;
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: -50px;
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
     }
 }

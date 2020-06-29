@@ -12,7 +12,7 @@ $(document).ready(function () {
     $('.modal__close').on('click', () => {
         $('.modal').fadeOut();
     })
-    
+
 
     // burger
     $('.burger-menu-icon').on('click', () => {
@@ -81,18 +81,6 @@ $(document).ready(function () {
         }
     })
 
-    $('.owl-carousel__s-reviews').owlCarousel({
-        loop: true,
-        navText: ["<img src='assets/img/svg/slider-arrow-prev-gray.svg'>", "<img src='assets/img/svg/slider-arrow-next-gray.svg'>"],
-        nav: true,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-        }
-    })
-
     $('.page-slider').owlCarousel({
         loop: true,
         margin: 22,
@@ -108,3 +96,40 @@ $(document).ready(function () {
 
 });
 
+
+
+
+
+let swiperCertificates = new Swiper('.s-certificates__swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    centeredSlides: true,
+    loop: true,
+    navigation: false,
+    allowTouchMove: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+            centeredSlides: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+    }
+});
+
+let swiperReviews = new Swiper('.s-reviews__swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
