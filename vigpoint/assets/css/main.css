@@ -2015,6 +2015,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2030,13 +2032,15 @@ a:hover {
 }
 
 .footer__menu .main-menu__link:hover {
-  color: #0756BB;
+  color: #0756bb;
 }
 
 .footer__copy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2108,6 +2112,41 @@ a:hover {
 
   .p-progress__col {
     width: calc(100% - 30px);
+  }
+
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer__logo {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .footer__menu .main-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__menu .main-menu__item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .footer__text {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .footer__text:last-child {
+    margin-bottom: 0;
   }
 }
 
