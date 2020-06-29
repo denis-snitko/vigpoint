@@ -1,0 +1,12 @@
+.modal
+    .modal__body
+        .modal__close
+        .modal__title Оставить заявку
+        p.modal__descr Наш менеджер перезвонит вам в течении 10 минут
+        form.modal__form(action="#" method="get")
+            p
+                input(type="text" name="name" placeholder='Ваше имя')
+            p
+                input(type="tel" name="tel" placeholder='Ваш телефон' required)
+            button.base-button.modal__button(type="submit") Отправить
+        p.modal__text Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a>

@@ -15,7 +15,7 @@
 
         text-shadow: 0px 12.381px 61.9048px rgba(0, 0, 0, 0.1);
 
-        @include sm() {
+        @include sm-block() {
             margin-bottom: 0;
             font-size: 54px;
             line-height: 90px;

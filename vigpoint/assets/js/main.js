@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    // Modal
+    $('.header__button').on('click', () => {
+        $('.modal').fadeIn().attr('style', 'display:flex');
+    })
+
+    $('.s-hero__button').on('click', () => {
+        $('.modal').fadeIn().attr('style', 'display:flex');
+    })
+
+    $('.modal__close').on('click', () => {
+        $('.modal').fadeOut();
+    })
+
+
+
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
