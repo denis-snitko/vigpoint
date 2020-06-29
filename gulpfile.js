@@ -1,5 +1,5 @@
 
-let projectFolder = require("path").basename(__dirname);
+let projectFolder = require("path").basename("docs");
 let sourceFolder = "#src";
 
 let fs = require('fs');
