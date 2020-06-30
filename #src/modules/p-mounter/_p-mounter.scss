@@ -1,6 +1,10 @@
 .p-mounter {
     padding: 120px 0;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     .page-text {
         max-width: 850px;
         margin: 0 auto;

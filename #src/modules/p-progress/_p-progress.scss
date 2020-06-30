@@ -1,6 +1,10 @@
 .p-progress {
     padding: 120px 0;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     &__row {
         @include row-flex();
     }
@@ -14,13 +18,30 @@
     &__item {
         margin-bottom: 45px;
     }
+
+    &__swiper-container {
+        position: relative;
+        overflow: hidden;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            bottom: 20px;
+            width: 70px;
+            height: 43px;
+            background-color: #0756BB;
+
+            @include md-block() {
+                display: flex;
+            }
+        }
+    }
 }
 
 .item-progress {
     img {
         display: block;
         width: 100%;
-        max-width: 570px;
+        // max-width: 570px;
         height: 313px;
         margin-bottom: 20px;
         border-radius: 2px;

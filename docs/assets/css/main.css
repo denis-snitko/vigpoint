@@ -2159,10 +2159,22 @@ body {
   margin-bottom: 45px;
 }
 
+.p-progress__swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.p-progress__swiper-container .swiper-button-prev,
+.p-progress__swiper-container .swiper-button-next {
+  bottom: 20px;
+  width: 70px;
+  height: 43px;
+  background-color: #0756BB;
+}
+
 .item-progress img {
   display: block;
   width: 100%;
-  max-width: 570px;
   height: 313px;
   margin-bottom: 20px;
   border-radius: 2px;
@@ -2488,6 +2500,10 @@ body {
     overflow: inherit;
   }
 
+  .p-about {
+    padding: 50px 0;
+  }
+
   .p-about__col-3 {
     width: calc(100% - 30px);
   }
@@ -2497,12 +2513,36 @@ body {
     margin: 0 auto 25px auto;
   }
 
+  .p-about__services {
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+
+  .services-about__content {
+    padding-bottom: 50px;
+  }
+
   .p-production__swiper-container {
     overflow: inherit;
   }
 
+  .p-mounter {
+    padding: 50px 0;
+  }
+
+  .p-progress {
+    padding: 50px 0;
+  }
+
   .p-progress__col {
     width: calc(100% - 30px);
+  }
+
+  .p-progress__swiper-container .swiper-button-prev,
+  .p-progress__swiper-container .swiper-button-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .footer__top {

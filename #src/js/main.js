@@ -53,21 +53,6 @@ $(document).ready(function () {
         }
     })
 
-
-    $('.owl-carousel__s-clients').owlCarousel({
-        loop: true,
-        margin: 25,
-        navText: ["<img src='assets/img/svg/slider-arrow-prev.svg'>", "<img src='assets/img/svg/slider-arrow-next.svg'>"],
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 3
-            },
-
-        }
-    })
-
     $('.page-slider').owlCarousel({
         loop: true,
         margin: 22,
@@ -180,6 +165,19 @@ baseSlider.forEach((el) => {
                     nextEl: el.querySelector('.swiper-button-next')
                 },
             },
+        }
+    });
+})
+
+let progresSliders = document.querySelectorAll('.p-progress__swiper-container');
+progresSliders.forEach((el) => {
+    new Swiper(el, {
+        slidesPerView: 1,
+        loop: true,
+        allowTouchMove: true,
+        navigation: {
+            prevEl: el.querySelector('.swiper-button-prev'),
+            nextEl: el.querySelector('.swiper-button-next')
         }
     });
 })
