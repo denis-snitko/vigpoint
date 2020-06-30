@@ -2726,13 +2726,13 @@ body {
     padding-bottom: 50px;
   }
 
-  .p-mounter {
-    padding-top: 30px;
-    padding-bottom: 50px;
+  .p-brands__item {
+    padding-top: 40px;
   }
 
   .p-mounter {
-    padding: 50px 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 
   .p-progress {
