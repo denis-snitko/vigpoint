@@ -172,4 +172,7 @@ let sMounterMain = new Swiper('.swiper-container--main', {
 });
 
 
-
+const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true
+});
