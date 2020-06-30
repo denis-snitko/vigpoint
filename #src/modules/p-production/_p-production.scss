@@ -1,5 +1,11 @@
 .p-production {
-    padding: 120px 0;
+    padding-top: 50px;
+    padding-bottom: 120px;
+
+    @include md-block() {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 
     &__video {
         width: 100%;

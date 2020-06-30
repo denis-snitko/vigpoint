@@ -1,6 +1,13 @@
 .p-brands {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+
+    @include md-block() {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    
 
     &__item {
         padding: 60px 0;
