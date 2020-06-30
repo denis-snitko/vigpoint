@@ -2,6 +2,10 @@
     position: relative;
     padding: 120px 0 120px 0;
 
+    @include md-block {
+        padding: 50px 0;
+    }
+
     &__row {
         position: relative;
     }
@@ -21,7 +25,7 @@
     &__swiper-container {
         margin: 0 50px;
         overflow: hidden;
-        
+
         @include md-block() {
             overflow: inherit;
         }
@@ -31,5 +35,3 @@
         height: 100%;
     }
 }
-
-

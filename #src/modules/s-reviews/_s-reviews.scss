@@ -2,6 +2,10 @@
     position: relative;
     padding: 120px 0;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -14,7 +18,7 @@
         filter: opacity(8%);
     }
 
-    &__row  {
+    &__row {
         position: relative;
     }
 
@@ -32,6 +36,10 @@
     &__img {
         max-width: 50%;
         object-fit: cover;
+
+        @include md-block() {
+            display: none;
+        }
     }
 
     &__body {
@@ -78,6 +86,10 @@
 
     .swiper-container-horizontal > .swiper-pagination-bullets {
         bottom: -50px;
+        
+        @include md-block() {
+            bottom: -30px;
+        }
     }
 
     .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {

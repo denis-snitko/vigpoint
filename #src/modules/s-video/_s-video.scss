@@ -2,6 +2,10 @@
     position: relative;
     padding: 120px 0;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -19,7 +23,13 @@
     }
 
     &__row {
-        max-width: 970px;
-        margin: 0 auto;
+        
+        video {
+            display: block;
+            width: 100%;
+            max-width: 970px;
+            margin: 0 auto;
+
+        }
     }
 }

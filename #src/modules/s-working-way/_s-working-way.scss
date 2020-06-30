@@ -1,6 +1,10 @@
 .s-working-way {
     padding: 120px 0 70px 0;
 
+    @include md-block() {
+        padding-top: 50px;
+    }
+
     &__card-row {
         justify-content: space-between;
 

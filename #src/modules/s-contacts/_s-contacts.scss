@@ -5,6 +5,18 @@
         height: 368px;
         margin-left: auto;
         box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+
+        
+        @include lg-block {
+            width: auto;
+            margin-left: 0;
+        }
+
+        @include md-block {
+            flex-wrap: wrap;
+            height: auto;
+            box-shadow: none;
+        }
     }
 
     &__text {
@@ -16,13 +28,30 @@
         padding: 52px 55px;
         font-weight: 500;
         font-size: 18px;
-
+        
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         color: #1b1716;
+        
+        @include md-block {
+            padding: 30px 15px;
+        }
     }
 
     &__map {
         width: 1000px;
+        
+        @include md-block {
+            height: 365px;
+            margin: 0 -15px;
+        }
+        
+        img {
+            @include md-block {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
     .address {
@@ -36,6 +65,16 @@
             font-size: 18px;
             text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
             color: #1b1716;
+        }
+
+        @include md-block {
+            margin-bottom: 25px;
+        }
+    }
+
+    .tel {
+        @include md-block {
+            margin-bottom: 25px;
         }
     }
 }

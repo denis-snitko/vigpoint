@@ -1,6 +1,10 @@
 .s-mounter {
     padding: 120px 0;
 
+    @include md-block {
+        padding: 50px 0;
+    }
+
     &__row {
         @include row-flex();
     }

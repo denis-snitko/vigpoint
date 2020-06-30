@@ -1,6 +1,10 @@
 .s-advantages {
     padding: 120px 0 90px 0;
 
+    @include md-block() {
+        padding: 50px 0;
+    }
+
     &__title {
         margin-bottom: 60px;
     }
@@ -17,12 +21,11 @@
     @include size-md(6);
     @include size-sm(12);
 
-    
     display: flex;
     flex-direction: column;
-    
+
     height: 270px;
-    
+
     margin-bottom: 30px;
     padding: 22px 28px;
     text-align: center;
@@ -36,8 +39,7 @@
         margin-bottom: 15px;
         margin-left: auto;
         padding-bottom: 10px;
-        
-        
+
         border-bottom: 2px solid #0756bb;
     }
 
@@ -48,7 +50,7 @@
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         color: #1b1716;
     }
-    
+
     &__descr {
         font-weight: 500;
 

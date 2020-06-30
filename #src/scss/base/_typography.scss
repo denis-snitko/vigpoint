@@ -1,10 +1,10 @@
 /* TYPOGRAPHY */
 
 body {
-    font-family: "Gilroy";
-    font-size: $base-font-size;
     font-weight: $base-font-weight;
+    font-size: $base-font-size;
     line-height: $base-line-height;
+    font-family: "Gilroy";
     color: $base-text-color;
 }
 
@@ -39,6 +39,10 @@ a {
         background: linear-gradient(90deg, #05387a 0%, #0756bb 100%);
 
         transform: translateX(50%);
+    }
+
+    @include lg-block {
+        margin-bottom: 30px;
     }
 }
 
