@@ -1,6 +1,10 @@
 .s-clients {
     position: relative;
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
+
+    @include md-block() {
+        padding: 50px 0;
+    }
 
     &::before {
         content: "";
@@ -50,5 +54,19 @@
         img {
             width: auto !important;
         }
+    }
+
+    .s-clients__swiper-container {
+        margin: 0 auto;
+        overflow: hidden;
+
+        @include md-block() {
+            overflow: inherit;
+        }
+    }
+
+    .swiper-slide img {
+        width: auto;
+        height: auto;
     }
 }

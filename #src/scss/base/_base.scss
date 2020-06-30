@@ -139,7 +139,7 @@ body {
 
 .page-text {
     margin-bottom: 45px;
-    // padding: 0 15px;
+    padding: 0 15px;
     font-weight: 500;
     line-height: 21px;
 
@@ -221,6 +221,33 @@ body {
 }
 
 // Swiper
+
+.base-slider__swiper-container {
+    margin: 0 40px;
+    overflow: hidden;
+
+    @include lg-block() {
+        overflow: inherit;
+    }
+
+    .swiper-button-prev {
+        left: -100px;
+    }
+
+    .swiper-button-next {
+        right: -100px;
+    }
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
 
 .swiper-button-prev,
 .swiper-button-next {

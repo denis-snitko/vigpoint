@@ -13,6 +13,26 @@
             margin: 0 auto;
         }
     }
+
+    &__row {
+        position: relative;
+    }
+
+    &__swiper-container {
+        overflow: hidden;
+
+        @include md-block() {
+            overflow: inherit;
+        }
+    }
+
+    .swiper-button-prev {
+        left: -100px;
+    }
+
+    .swiper-button-next {
+        right: -100px;
+    }
 }
 
 .page-wrapper {

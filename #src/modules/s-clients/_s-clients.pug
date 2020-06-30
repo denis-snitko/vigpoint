@@ -2,12 +2,25 @@ section.s-clients
     .container
         .s-clients__wrapper
             h2.base-title.s-clients__title Наши клиенты
-            .s-clients__row.owl-carousel.owl-theme.owl-carousel__s-clients
-                .s-clients__item
-                    img(src="./assets/img/brands/client-brand-1.png" alt="")
-                .s-clients__item
-                    img(src="./assets/img/brands/client-brand-2.png" alt="")
-                .s-clients__item
-                    img(src="./assets/img/brands/client-brand-3.png" alt="")
-                .s-clients__item
-                    img(src="./assets/img/brands/client-brand-2.png" alt="")
+        .s-clients__row
+            // Swiper
+            .s-clients__swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .s-clients__item
+                            img(src="./assets/img/brands/client-brand-1.png" alt="")
+                    .swiper-slide
+                        .s-clients__item
+                            img(src="./assets/img/brands/client-brand-2.png" alt="")
+                    .swiper-slide
+                        .s-clients__item
+                            img(src="./assets/img/brands/client-brand-3.png" alt="")
+                    .swiper-slide
+                        .s-clients__item
+                            img(src="./assets/img/brands/client-brand-2.png" alt="")
+                    
+                // Navigation
+                .swiper-button-prev
+                    <img src='assets/img/svg/slider-arrow-prev-gray.svg'>
+                .swiper-button-next
+                    <img src='assets/img/svg/slider-arrow-next-gray.svg'>

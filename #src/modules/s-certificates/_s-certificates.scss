@@ -26,9 +26,10 @@
             overflow: inherit;
         }
     }
+
+    .swiper-slide img {
+        height: 100%;
+    }
 }
 
-.swiper-slide img {
-    width: 100% !important;
-}
 

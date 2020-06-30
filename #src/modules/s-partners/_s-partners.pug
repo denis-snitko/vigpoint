@@ -1,14 +1,27 @@
 section.s-partners
     .container
         h2.base-title Наши партнеры
-        .s-partners__row.owl-carousel.owl-theme.owl-carousel__s-partners
-            .s-partners__item
-                img(src="./assets/img/brands/partner-brand-1.png" alt="")
-            .s-partners__item
-                img(src="./assets/img/brands/partner-brand-2.png" alt="")
-            .s-partners__item
-                img(src="./assets/img/brands/partner-brand-3.png" alt="")
-            .s-partners__item
-                img(src="./assets/img/brands/partner-brand-4.png" alt="")
-            .s-partners__item
-                img(src="./assets/img/brands/partner-brand-2.png" alt="")
+        .s-certificates__row
+            // Swiper
+            .s-certificates__swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .s-partners__item
+                            img(src="./assets/img/brands/partner-brand-1.png" alt="")
+                    .swiper-slide
+                        .s-partners__item
+                            img(src="./assets/img/brands/partner-brand-2.png" alt="")
+                    .swiper-slide
+                        .s-partners__item
+                            img(src="./assets/img/brands/partner-brand-3.png" alt="")
+                    .swiper-slide
+                        .s-partners__item
+                            img(src="./assets/img/brands/partner-brand-4.png" alt="")
+                    .swiper-slide
+                        .s-partners__item
+                            img(src="./assets/img/brands/partner-brand-2.png" alt="")
+                // Navigation
+                .swiper-button-prev
+                    <img src='assets/img/svg/slider-arrow-prev-gray.svg'>
+                .swiper-button-next
+                    <img src='assets/img/svg/slider-arrow-next-gray.svg'>
