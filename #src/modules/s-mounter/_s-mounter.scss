@@ -22,6 +22,10 @@
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         color: #1b1716;
 
+        @include md-block {
+            margin-top: 30px;;
+        }
+
         & > p {
             margin-bottom: 20px;
         }
@@ -35,5 +39,38 @@
 
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         color: #1b1716;
+    }
+
+    .swiper-container--main {
+        margin-bottom: 20px;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: auto;
+            bottom: 0;
+            width: 70px;
+            height: 43px;
+            background-color: #0756bb;
+
+            @include md-block() {
+                display: flex;
+            }
+        }
+    }
+
+    .swiper-container--thumbs {
+
+        .swiper-slide {
+            opacity: 0.5;
+            transition: all 0.15s linear;
+        }
+
+        .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+
+    .swiper-container--thumbs {
+        cursor: pointer;
     }
 }

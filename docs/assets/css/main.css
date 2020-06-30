@@ -1332,9 +1332,14 @@ body {
 }
 
 .s-working-way__card-row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .s-working-way__card-row--center {
@@ -1353,7 +1358,6 @@ body {
 
 .s-working-way .base-card {
   position: relative;
-  width: 255px;
   overflow: hidden;
 }
 
@@ -1490,6 +1494,34 @@ body {
   line-height: 24px;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   color: #1b1716;
+}
+
+.s-mounter .swiper-container--main {
+  margin-bottom: 20px;
+}
+
+.s-mounter .swiper-container--main .swiper-button-prev,
+.s-mounter .swiper-container--main .swiper-button-next {
+  top: auto;
+  bottom: 0;
+  width: 70px;
+  height: 43px;
+  background-color: #0756bb;
+}
+
+.s-mounter .swiper-container--thumbs .swiper-slide {
+  opacity: 0.5;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.s-mounter .swiper-container--thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.s-mounter .swiper-container--thumbs {
+  cursor: pointer;
 }
 
 .s-clients {
@@ -2500,6 +2532,13 @@ body {
     padding-top: 50px;
   }
 
+  .s-working-way__card-row {
+    display: -webkit-box;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
   .s-brands {
     padding: 50px 0;
   }
@@ -2510,6 +2549,17 @@ body {
 
   .s-mounter__col {
     width: calc(100% - 30px);
+  }
+
+  .s-mounter__text {
+    margin-top: 30px;
+  }
+
+  .s-mounter .swiper-container--main .swiper-button-prev,
+  .s-mounter .swiper-container--main .swiper-button-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .s-clients {

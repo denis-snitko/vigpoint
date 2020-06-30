@@ -6,7 +6,9 @@
     }
 
     &__card-row {
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
         &--center {
             justify-content: center;
@@ -17,13 +19,18 @@
                 }
             }
         }
+
+        @include md-block() {
+            display: -webkit-box;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
     }
 
     .base-card {
         position: relative;
-        width: 255px;
         overflow: hidden;
-        
+
         &__bg {
             position: absolute;
             top: 120px;
