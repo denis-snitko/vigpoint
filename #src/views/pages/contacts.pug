@@ -1,18 +1,17 @@
 extends ../layouts/default
 
 block variables
-	- const title = "Производство"
+	- const title = "Контакты"
 
 block content
 	.main-body
 		include ../../modules/header/_header
 
 		main.content
-			include ../../modules/p-production/_p-production
+			include ../../modules/p-contacts/_p-contacts
 
 		include ../../modules/footer/_footer
 
 block scripts
 	script(src="./assets/js/vendors.js")
-	script(src="https://unpkg.com/swiper/js/swiper.min.js")
 	script(src="./assets/js/main.js")
