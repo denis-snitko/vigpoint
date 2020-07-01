@@ -22,25 +22,17 @@ $(document).ready(function () {
     $('.burger-menu-modal__close').on('click', () => {
         $('.burger-menu').fadeOut();
     })
-
-
-    $('.owl-carousel__s-hero').owlCarousel({
-        loop: true,
-        margin: 25,
-        // navText: ["<img src='assets/img/svg/slider-arrow-prev.svg'>", "<img src='assets/img/svg/slider-arrow-next.svg'>"],
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            }
-        }
-    })
 });
 
 
+//Swiper slider
 
+let swiperHero = new Swiper('.s-hero__swiper-container', {
+    slidesPerView: 1,
+    loop: true,
+    allowTouchMove: true
 
+});
 
 let swiperClients = new Swiper('.s-clients__swiper-container', {
     slidesPerView: 1,
