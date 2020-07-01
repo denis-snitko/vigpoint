@@ -7,3 +7,26 @@ section.p-contacts
                 li.bread-crumbs__item / 
                 li.bread-crumbs__item Контакты
         h2.base-title Контакты
+        .s-contacts__body
+            .s-contacts__text
+                .address
+                    p Офис:
+                    | Москва, Полесский проезд 16, офис 203
+                    br
+                    br
+                    p Производство:
+                    | Большие Веземы, улица Ямская, городок 17, владение 9
+                a.tel(href="tel:+74995570474") +7 (499) 557-04-74
+                a.mail(href="mailto:Feedback@vigpoint.com") Feedback@vigpoint.com
+                form.modal__form(action="#" method="get")
+                    p.modal__form-title Остались вопросы? Свяжитесь с нами!
+                    p
+                        input(type="text" name="name" placeholder='Ваше имя')
+                    p
+                        input(type="tel" name="tel" placeholder='Ваш телефон' required)
+                    button.base-button.modal__button(type="submit") Отправить
+                p.modal__text Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a>
+
+            .s-contacts__map
+                img(src="./assets/img/map.jpg" alt="")
+        
