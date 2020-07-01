@@ -1,24 +1,29 @@
 $(document).ready(function () {
 
     // Modal
+    // $('').preventDefault();
+   
+        
     $('.header__button').on('click', () => {
         $('.modal').fadeIn().attr('style', 'display:flex');
     })
-
     $('.s-hero__button').on('click', () => {
         $('.modal').fadeIn().attr('style', 'display:flex');
     })
 
+    // Modal-thanks
     $('.modal__close').on('click', () => {
         $('.modal').fadeOut();
     })
+    $('.modal-thanks--close').on('click', () => {
+        $('.modal-thanks').fadeOut();
+    })
 
 
-    // burger
+    // Burger
     $('.burger-menu-icon').on('click', () => {
         $('.burger-menu').fadeIn();
     })
-
     $('.burger-menu-modal__close').on('click', () => {
         $('.burger-menu').fadeOut();
     })
