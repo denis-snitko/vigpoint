@@ -12,6 +12,10 @@
     &__card-row {
         @include row-flex();
     }
+
+    .container {
+        position: relative;
+    }
 }
 
 .base-card {

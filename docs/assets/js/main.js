@@ -2,8 +2,8 @@ $(document).ready(function () {
 
     // Modal
     // $('').preventDefault();
-   
-        
+
+
     $('.header__button').on('click', () => {
         $('.modal').fadeIn().attr('style', 'display:flex');
     })
@@ -35,7 +35,15 @@ $(document).ready(function () {
 let swiperHero = new Swiper('.s-hero__swiper-container', {
     slidesPerView: 1,
     loop: true,
-    allowTouchMove: true
+    allowTouchMove: true,
+    pagination: {
+        el: document.querySelector('.swiper-pagination'),
+        type: 'fraction',
+    },
+    navigation: {
+        prevEl: document.querySelector('.s-hero__swiper-button-prev'),
+        nextEl: document.querySelector('.s-hero__swiper-button-next'),
+    },
 
 });
 
