@@ -3228,8 +3228,12 @@ body {
   height: 100%;
 }
 
-.s-reviews .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -50px;
+.s-reviews .swiper-pagination {
+  top: auto;
+  bottom: -70px;
+  left: auto;
+  text-align: center;
+  background-color: transparent;
 }
 
 .s-reviews .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -4197,10 +4201,6 @@ body {
 
   .s-reviews__img {
     display: none;
-  }
-
-  .s-reviews .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -30px;
   }
 
   .s-certificates {
