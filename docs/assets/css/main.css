@@ -2497,7 +2497,7 @@ body {
 }
 
 .swiper-pagination .swiper-pagination-current {
-  color: #1B1716;
+  color: #1b1716;
 }
 
 .swiper-pagination .swiper-pagination-total {
@@ -4113,6 +4113,10 @@ body {
   }
 
   .swiper-pagination {
+    display: none;
+  }
+
+  .s-hero__swiper-navigation {
     display: none;
   }
 
